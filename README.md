@@ -42,11 +42,11 @@ FILE STRUCTURE:
 
 law-app/
 ├── app/
-│   └── page.tsx                    (Super clean - just 3 lines!)
+│ └── page.tsx # Super clean - just 3 lines!
 ├── components/
-│   ├── auth/
-│   │   ├── AuthTabs.tsx           (Main auth component)
-│   │   ├── sign-in.tsx            (Your sign-in form)
-│   │   └── sign-up.tsx            (Your sign-up form)
-│   └── ui/
-│       └── TabNavigation.tsx      (Reusable tab component)
+│ ├── auth/
+│ │ ├── AuthTabs.tsx # Main auth component
+│ │ ├── sign-in.tsx # Your sign-in form
+│ │ └── sign-up.tsx # Your sign-up form
+│ └── ui/
+│ └── TabNavigation.tsx # Reusable tab component
