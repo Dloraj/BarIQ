@@ -37,16 +37,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 
-FILE STRUCTURE:
+## 📂 Project Structure
 
-
+```bash
 law-app/
 ├── app/
-│ └── page.tsx # Super clean - just 3 lines!
+│   └── page.tsx                
 ├── components/
-│ ├── auth/
-│ │ ├── AuthTabs.tsx # Main auth component
-│ │ ├── sign-in.tsx # Your sign-in form
-│ │ └── sign-up.tsx # Your sign-up form
-│ └── ui/
-│ └── TabNavigation.tsx # Reusable tab component
+│   ├── auth/
+│   │   ├── AuthTabs.tsx        # Main auth component
+│   │   ├── sign-in.tsx         # Your sign-in form
+│   │   └── sign-up.tsx         # Your sign-up form
+│   └── ui/
+│       └── TabNavigation.tsx   # Reusable tab component
