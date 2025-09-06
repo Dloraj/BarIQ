@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+FILE STRUCTURE:
+
+
+law-app/
+├── app/
+│   └── page.tsx                    (Super clean - just 3 lines!)
+├── components/
+│   ├── auth/
+│   │   ├── AuthTabs.tsx           (Main auth component)
+│   │   ├── sign-in.tsx            (Your sign-in form)
+│   │   └── sign-up.tsx            (Your sign-up form)
+│   └── ui/
+│       └── TabNavigation.tsx      (Reusable tab component)
