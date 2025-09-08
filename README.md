@@ -38,7 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## 📂 Project Structure
 
 <<<<<<< HEAD
-```bash
+
+````bash
 law-app/
 ├── app/
 │   └── page.tsx
@@ -49,16 +50,14 @@ law-app/
 ```bash
 law-app/
 ├── app/
-│   └── page.tsx                
+│   └── page.tsx
 >>>>>>> c1aa5b22a50172692fd180c35a63099d22de89b5
 ├── components/
 │   ├── auth/
 │   │   ├── AuthTabs.tsx        # Main auth component
-│   │   ├── sign-in.tsx         # Your sign-in form
-│   │   └── sign-up.tsx         # Your sign-up form
+│   │   ├── sign-in.tsx         # Sign-in form
+│   │   └── sign-up.tsx         # Sign-up form
 │   └── ui/
 │       └── TabNavigation.tsx   # Reusable tab component
-<<<<<<< HEAD
-```
-=======
->>>>>>> c1aa5b22a50172692fd180c35a63099d22de89b5
+
+````
