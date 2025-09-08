@@ -35,18 +35,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## 📂 Project Structure
 
-
-FILE STRUCTURE:
-
-
+```bash
 law-app/
 ├── app/
-│   └── page.tsx                    (Super clean - just 3 lines!)
+│   └── page.tsx
 ├── components/
 │   ├── auth/
-│   │   ├── AuthTabs.tsx           (Main auth component)
-│   │   ├── sign-in.tsx            (Your sign-in form)
-│   │   └── sign-up.tsx            (Your sign-up form)
+│   │   ├── AuthTabs.tsx        # Main auth component
+│   │   ├── sign-in.tsx         # Your sign-in form
+│   │   └── sign-up.tsx         # Your sign-up form
 │   └── ui/
-│       └── TabNavigation.tsx      (Reusable tab component)
+│       └── TabNavigation.tsx   # Reusable tab component
+```
