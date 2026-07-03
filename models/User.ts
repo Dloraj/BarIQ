@@ -5,8 +5,16 @@ export interface IUser extends Document {
   fullName: string;
   email: string;
   password: string;
-  role: "admin" | "super_admin";
+  role: "student" | "reviewee" | "admin" | "super_admin";
   isApproved: boolean;
+  lawSchool?: string;
+  yearLevel?: "1L" | "2L" | "3L" | "4L" | "reviewee";
+  targetBarYear?: number;
+  studyGoals?: {
+    dailyMcqTarget: number;
+    dailyFlashcardTarget: number;
+    dailyCodalReadTarget: number;
+  };
   createdAt: Date;
   updatedAt: Date;
   comparePassword(candidatePassword: string): Promise<boolean>;
@@ -39,12 +47,28 @@ const UserSchema = new Schema<IUser>(
     },
     role: {
       type: String,
-      enum: ["admin", "super_admin"],
-      default: "admin",
+      enum: ["student", "reviewee", "admin", "super_admin"],
+      default: "student",
     },
     isApproved: {
       type: Boolean,
-      default: false,
+      default: true,
+    },
+    lawSchool: {
+      type: String,
+      trim: true,
+    },
+    yearLevel: {
+      type: String,
+      enum: ["1L", "2L", "3L", "4L", "reviewee"],
+    },
+    targetBarYear: {
+      type: Number,
+    },
+    studyGoals: {
+      dailyMcqTarget: { type: Number, default: 10 },
+      dailyFlashcardTarget: { type: Number, default: 20 },
+      dailyCodalReadTarget: { type: Number, default: 15 },
     },
   },
   {

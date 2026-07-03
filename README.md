@@ -42,7 +42,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 law-app/
 ├── app/
 │   └── page.tsx
->>>>>>> c1aa5b22a50172692fd180c35a63099d22de89b5
 ├── components/
 │   ├── auth/
 │   │   ├── AuthTabs.tsx        # Main auth component
@@ -50,5 +49,4 @@ law-app/
 │   │   └── sign-up.tsx         # Sign-up form
 │   └── ui/
 │       └── TabNavigation.tsx   # Reusable tab component
-
-````
+```
